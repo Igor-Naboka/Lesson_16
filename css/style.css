@@ -6,8 +6,6 @@
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
   background: #f5f5f5;
   line-height: 1;
 }
@@ -30,7 +28,7 @@ body {
 
 /* other selectors */
 .appointment {
-  background: url("../img/index/appointment/vector/bg.jpg");
+  background: url("../img/index/appointment/vector/bg.jpg") 50% center / cover no-repeat;
 }
 .appointment__container {
   padding: 130px 0 210px 0;
@@ -82,11 +80,26 @@ body {
   border-radius: 10px;
   padding: 17px 23.56px 15px;
   background: #5d62b5;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #fff;
 }
 
+.form-appointment__textarea:hover::placeholder,
+.box-input:hover .box-input__input::placeholder {
+  transform: translate(-100%, -150%);
+}
+
+.form-appointment__textarea:focus::placeholder,
+.box-input__input:focus::placeholder {
+  transform: translate(-100%, -150%);
+}
+
+.form-appointment__textarea::placeholder,
 .box-input__input::placeholder {
-  letter-spacing: 1.5;
+  letter-spacing: 1.5px;
   color: #ffffff;
+  transition: all 1s ease 0s;
 }
 
 .form-appointment__textarea {
@@ -94,12 +107,47 @@ body {
   width: 100%;
   min-height: 180px;
   padding: 17px 23px;
+  resize: vertical;
+  border-radius: 10px;
+  border: 2px solid #959595;
+  background: #5d62b5;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #fff;
 }
+
+.form-appointment__textarea:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .form-appointment__button {
+  display: flex;
+  justify-content: end;
 }
 .button {
 }
+
 .button__body {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 2px;
+  background: #f2726f;
+  border-radius: 8px;
+  padding: 9px 32px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover .button__body {
+  background: #dc7270;
+  letter-spacing: 1px;
 }
 
 /*                   */
+
+
