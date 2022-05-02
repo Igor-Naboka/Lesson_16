@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Lesson 15</title>
+  <title>Lesson 16</title>
 </head>
 
 <body>
@@ -28,12 +28,12 @@
                     type="email">
                 </div>
                 <div class="box-input">
-                  <input class="box-input__input" required autocomplete="off" placeholder="Phone Number" name="phone-number"
-                    type="tel">
+                  <input class="box-input__input" required autocomplete="off" placeholder="Phone Number"
+                    name="phone-number" type="tel">
                 </div>
                 <div class="box-input">
-                  <input class="box-input__input" required autocomplete="off" placeholder="Select Service" name="service"
-                    type="text">
+                  <input class="box-input__input" required autocomplete="off" placeholder="Select Service"
+                    name="service" type="text">
                 </div>
               </div>
               <textarea class="form-appointment__textarea" placeholder="Tell us about your puppers include his/her name"
@@ -47,20 +47,86 @@
       </div>
       <div class="summary">
         <div class="summary__container">
-          <div class="summary__body">
+          <form class="summary__body">
             <div class="summary__header">
               <h3 class="summary__title title">Summary</h3>
               <p class="summary__sub-title sub-title">Estimate Shipping and Tax</p>
               <p class="summary__text">Enter your destination to get a shipping estimate.</p>
-              <form action="" class="summary__form form-summary">
-                <div class="form-summary__row">
-                  <label for="" class="form-summary__label"></label>
-                  <input type="text" class="form-summary__input">
-                </div>
-                <button type="submit">Apply Discount</button>
-              </form>
             </div>
-          </div>
+            <div class="summary__inputs inputs">
+              <div class="inputs__first-lines input-block">
+                <div class="input-block__line">
+                  <label for="country" class="input-block__label lettering-above-input">Country</label>
+                  <select class="input-block__input" name="country" id="country">
+                    <option disabled selected value="">Choose a country</option>
+                    <option value="1">Kykyevo</option>
+                    <option value="2">Tytyevo</option>
+                    <option value="3">Mordor</option>
+                  </select>
+                </div>
+                <div class="input-block__line">
+                  <label class="input-block__label lettering-above-input" for="state">State/Province</label>
+                  <input class="input-block__input" id="state" name="state" type="text">
+                </div>
+                <div class="input-block__line">
+                  <label class="input-block__label lettering-above-input" for="zip">Zip/Postal Code</label>
+                  <input class="input-block__input" id="zip" name="zip" type="text">
+                </div>
+              </div>
+              <div class="inputs__second-lines radio">
+                <label for="rate" class="radio__sub-title lettering-above-input">Standard Rate</label>
+                <div class="radio__line">
+                  <input autocomplete="off" name="rate" class="radio__input" id="rate" type="radio" value="rate">
+                  <label for="rate" class="radio__label label-radio">Price may vary depending on the item/destination.
+                    Shop
+                    Staff will contact you. $21.00</label>
+                </div>
+                <label for="pickup" class="radio__sub-title lettering-above-input">Pickup from store</label>
+                <div class="radio__line">
+                  <input class="radio__input" name="rate" autocomplete="off" id="pickup" type="radio" value="rate">
+                  <label for="pickup" class="radio__label label-radio">1234 Street Adress City Address, 1234
+                    $0.00</label>
+                </div>
+              </div>
+              <div class="inputs__third-lines input-block">
+                <p class="input-block__sub-title sub-title">Apply Discount Code</p>
+                <div class="input-block__line">
+                  <label class="input-block__label lettering-above-input" for="code">Enter discount code</label>
+                  <input class="input-block__input" id="code" name="code" type="text" placeholder="Enter Discount code">
+                </div>
+              </div>
+            </div>
+            <div class="summary__button-wrapper">
+              <button class="summary__button button-form" type="submit">Apply Discount</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="login">
+        <div class="login__container">
+          <form action="#" class="login__body">
+            <div class="login__header header-login">
+              <h3 class="header-login__title">Registered Customers</h3>
+              <p class="header-login__text">If you have an account, sign in with your email address.</p>
+            </div>
+            <div class="login__inputs input-block">
+              <div class="input-block__line">
+                <label class="input-block__label lettering-above-input" for="email">Email<span
+                    class="input-block__sprocket"> *</span></label>
+                <input class="input-block__input" id="email" name="email" type="email" placeholder="Your Login">
+              </div>
+              <div class="input-block__line">
+                <label class="input-block__label lettering-above-input" for="password">Password<span
+                    class="input-block__sprocket"> *</span></label>
+                <input class="input-block__input" id="password" name="password" type="password"
+                  placeholder="Your Password">
+              </div>
+            </div>
+            <div class="login__buttons">
+              <button class="login__button button-form" type="submit">Sign In</button>
+              <a href="#" class="login__forgot-link">Forgot Your Password?</a>
+            </div>
+          </form>
         </div>
       </div>
     </main>
