@@ -409,7 +409,13 @@ option:disabled {
   color: #ffffff;
   background: #0156ff;
   flex: 0 0 151px;
+  transition: all 0.3s linear;
 }
+
+.login__button:hover {
+  background: #430a9f;
+}
+
 .button {
 }
 .login__forgot-link {
@@ -419,4 +425,9 @@ option:disabled {
   font-size: 14px;
   line-height: 20px;
   padding: 17.5px 10px;
+  transition: all 0.3s linear;
+}
+
+.login__forgot-link:hover {
+  color: #e001e8;
 }
