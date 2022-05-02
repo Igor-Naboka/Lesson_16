@@ -272,7 +272,7 @@ option:disabled {
   background-color: #fff;
   align-self: start;
   border: 1px solid #959595;
-  transition: all 0.3s ease;
+  transition: all 0.1s linear;
 }
 
 .radio__label::after {
@@ -285,7 +285,7 @@ option:disabled {
   border-radius: 50%;
   background: #0156ff;
   transform: scale(0);
-  transition: all 0.3s ease;
+  transition: all 0.1s linear;
 }
 
 .radio__line {
